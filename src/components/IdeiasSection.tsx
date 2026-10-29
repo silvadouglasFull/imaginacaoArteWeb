@@ -4,10 +4,8 @@ import galleryFloral from "@/assets/gallery-floral-agenda.jpg";
 import galleryRainbow from "@/assets/gallery-rainbow-planner.jpg";
 import galleryStickers from "@/assets/gallery-stickers.jpg";
 import galleryUnicorn from "@/assets/gallery-unicorn-notebook.jpg";
-import { useState } from "react";
 
 const IdeiasSection = () => {
-  const [hoveredItem, setHoveredItem] = useState<number | null>(null);
 
   // Gallery items with generated images
   const galleryItems = [
@@ -46,6 +44,12 @@ const IdeiasSection = () => {
       title: "Conjunto Adesivos Fofos",
       description: "Centenas de adesivos para personalizar tudo",
       image: galleryStickers
+    },
+    {
+      id: 7,
+      title: "Envelopes Personalizado",
+      description: "Deixe os envelopes com a cara da sua empresa",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_834692-MLB91939870463_092025-F-100-envelope-personalizado-com-sua-logo-arte-a4-saco-branco.webp"
     }
   ];
 
@@ -66,8 +70,6 @@ const IdeiasSection = () => {
             <div
               key={item.id}
               className="card-kawaii group cursor-pointer"
-              onMouseEnter={() => setHoveredItem(index)}
-              onMouseLeave={() => setHoveredItem(null)}
             >
               <div className="relative overflow-hidden rounded-xl mb-4">
                 <img

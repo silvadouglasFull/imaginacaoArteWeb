@@ -49,7 +49,7 @@ const Footer = () => {
           {/* Developer Credit */}
           <div className="text-center md:text-right">
             <a
-              href="https://www.instagram.com/dswebdev/"
+              href="https://dswebdev.com.br/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/70 hover:text-white font-kawaii text-sm transition-colors duration-300 hover:underline"
